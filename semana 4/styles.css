@@ -1,0 +1,90 @@
+/* Custom Styles for mi-sitio-bootstrap */
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; /* Light background for the page */
+}
+
+/* Customizing Bootstrap's Primary Button */
+.btn-primary {
+    background-color: #28a745; /* A more vibrant green */
+    border-color: #28a745;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34;
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow on hover */
+}
+
+/* Customizing Card Styles */
+.custom-card {
+    border-radius: 15px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden; /* Ensures image corners are also rounded */
+}
+
+.custom-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.custom-card .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 200px; /* Fixed height for consistent image size */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+/* Animación para el título principal */
+h1 {
+    color: #0056b3; /* A nice blue for the main title */
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .custom-card {
+        border: 2px solid #ff5733; /* Orange border on small screens */
+    }
+    .btn-primary {
+        background-color: #6f42c1; /* Purple button on small screens */
+        border-color: #6f42c1;
+    }
+}
+
+/* Additional styling for sections for better spacing */
+section {
+    padding: 60px 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #343a40 !important; /* Dark background for footer */
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #ffc107; /* Yellow on hover for links */
+}

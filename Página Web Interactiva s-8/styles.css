@@ -1,0 +1,17 @@
+/* Personaliza la barra de navegación con un degradado */
+.navbar {
+    background: linear-gradient(90deg, #1abc9c 0%, #3498db 100%);
+}
+
+/* Personaliza el botón de alerta */
+#alerta-btn {
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+/* Ejemplo adicional: Cambia el color de fondo del pie de página en modo móvil */
+@media (max-width: 576px) {
+    footer {
+    background-color: #3498db !important;
+    }
+}
